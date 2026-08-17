@@ -2,7 +2,7 @@
 
 ### Financial Domain Fine-Tuning with LoRA
 
-FinChat-XS is a lightweight financial-domain language model created by fine-tuning `HuggingFaceTB/SmolLM2-360M-Instruct` on a filtered subset of the `sujet-ai/Sujet-Finance-Instruct-177k` dataset.
+FinChat is a lightweight financial-domain language model created by fine-tuning `HuggingFaceTB/SmolLM2-360M-Instruct` on a filtered subset of the `sujet-ai/Sujet-Finance-Instruct-177k` dataset.
 
 The project focuses on parameter-efficient fine-tuning, controlled data preprocessing, leakage-safe evaluation, and deployment-ready model export.
 
