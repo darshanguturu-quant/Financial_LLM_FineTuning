@@ -1,4 +1,4 @@
-# Financial_LLM_FineTuning
+# FinChat
 
 ### Financial Domain Fine-Tuning with LoRA
 
@@ -201,7 +201,7 @@ What is the difference between revenue and profit?
 What is a dividend?
 ```
 
-It also includes a direct **base-model vs FinChat-XS comparison** using:
+It also includes a direct **base-model vs FinChat comparison** using:
 
 ```text
 Explain the concept of price-to-earnings ratio and why investors use it.
@@ -218,7 +218,7 @@ The notebook evaluates the same financial prompt with:
 ```text
 SmolLM2-360M-Instruct
         vs
-FinChat-XS
+FinChat
 ```
 
 This comparison is useful for determining whether fine-tuning produces a meaningful domain-specific improvement rather than simply measuring the model in isolation.
@@ -315,7 +315,7 @@ After training, the LoRA adapter is merged into the base model.
 The merged model and tokenizer are saved locally as:
 
 ```text
-FinChat-XS/
+FinChat/
 ```
 
 The notebook also includes Hugging Face Hub upload cells for:
@@ -332,7 +332,7 @@ The notebook also includes Hugging Face Hub upload cells for:
 .
 ├── Finetuning_Fin.ipynb
 ├── README.md
-└── FinChat-XS/
+└── FinChat/
     ├── config.json
     ├── generation_config.json
     ├── model.safetensors
@@ -341,7 +341,7 @@ The notebook also includes Hugging Face Hub upload cells for:
     └── ...
 ```
 
-The `FinChat-XS/` directory is generated after running the notebook and should only be committed if you intentionally want to store model artifacts in the repository. For large model files, Hugging Face Hub or Git LFS is preferable.
+The `FinChat/` directory is generated after running the notebook and should only be committed if you intentionally want to store model artifacts in the repository. For large model files, Hugging Face Hub or Git LFS is preferable.
 
 ---
 
@@ -402,7 +402,7 @@ Potential extensions include:
 - Add a larger high-quality financial reasoning dataset.
 - Evaluate responses with a structured financial QA test set.
 - Add inference latency and memory benchmarks.
-- Deploy FinChat-XS through an API or lightweight Gradio interface.
+- Deploy FinChat through an API or lightweight Gradio interface.
 
 ---
 
@@ -423,7 +423,7 @@ CUDA
 
 ## Disclaimer
 
-FinChat-XS is an experimental machine-learning project for research and educational purposes. It is not a substitute for professional financial, investment, tax, or legal advice.
+FinChat is an experimental machine-learning project for research and educational purposes. It is not a substitute for professional financial, investment, tax, or legal advice.
 
 ---
 
